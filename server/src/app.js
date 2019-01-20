@@ -10,9 +10,9 @@ app.use(cors())
 
 // cors is needed for going public need good security, otherwise it is a risk
 
-app.get('/status', (req, res) => {
+app.post('/register', (req, res) => {
   res.send({
-    message: 'hellowrold'
+    message: `Hello ${req.body.email} your user was registrerd have fun`
   })
 })
 
